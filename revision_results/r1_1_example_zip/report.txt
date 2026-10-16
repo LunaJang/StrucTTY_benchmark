@@ -1,0 +1,147 @@
+[1] README 추출
+  download URL : https://github.com/user-attachments/files/31204019/structty_example.zip
+  unzip 명령   : unzip -d example example.zip && rm example.zip
+  참조 경로 수 : 19
+    example/1CJK-assembly1.cif
+    example/1NPL-assembly1.cif
+    example/3A0C-assembly1.cif
+    example/3A0C-assembly1_colabfold.pdb
+    example/3HGM-assembly1.cif
+    example/3OAG-assembly1.cif
+    example/8KGM-assembly1.cif
+    example/9FL9-assembly1.cif
+    example/9N47-assembly1.cif
+    example/AF-A0A233SAX3-F1-model_v6.cif
+    example/chainfile_9N47.tsv
+    example/foldmason_result/foldmason.json
+    example/foldseek_result/DB1/
+    example/foldseek_result/DB1/3cna-assembly1.cif
+    example/foldseek_result/DB2/
+    example/foldseek_result/result
+    example/foldseek_result/result_multimer_report
+    example/L7RCY6.pdb
+    example/msa_result/query.a3m
+
+[1b] 릴리스 태그 'data' 조회
+  release 자산 URL : https://github.com/user-attachments/files/31627970/structty_example.zip
+  !! README 링크와 릴리스 링크가 다르다
+     README : https://github.com/user-attachments/files/31204019/structty_example.zip
+     release: https://github.com/user-attachments/files/31627970/structty_example.zip
+
+[2] 다운로드
+  README 링크 FAIL: HTTP 404 (대조군 github.com=200)
+  릴리스 링크 OK: 2425098 bytes
+  => README 의 zip URL 만 죽어 있다. R1-1 의 직접 원인.
+
+[3] zip 무결성·구조 (source=release)
+  unzip -t : OK
+  엔트리 수 : 36
+  최상위    :
+    1CJK-assembly1.cif
+    1NPL-assembly1.cif
+    3A0C-assembly1.cif
+    3A0C-assembly1_colabfold.pdb
+    3HGM-assembly1.cif
+    3OAG-assembly1.cif
+    8KGM-assembly1.cif
+    9FL9-assembly1.cif
+    9N47-assembly1.cif
+    AF-A0A233SAX3-F1-model_v6.cif
+    chainfile_9N47.tsv
+    foldmason_result
+    foldseek_result
+    L7RCY6.pdb
+    msa_result
+
+[4] README 지시대로 압축 해제 (unzip -d example example.zip && rm example.zip)
+  unzip : OK
+  결과 트리(2단계):
+    .
+    ./example
+    ./example/1CJK-assembly1.cif
+    ./example/1NPL-assembly1.cif
+    ./example/3A0C-assembly1.cif
+    ./example/3A0C-assembly1_colabfold.pdb
+    ./example/3HGM-assembly1.cif
+    ./example/3OAG-assembly1.cif
+    ./example/8KGM-assembly1.cif
+    ./example/9FL9-assembly1.cif
+    ./example/9N47-assembly1.cif
+    ./example/AF-A0A233SAX3-F1-model_v6.cif
+    ./example/chainfile_9N47.tsv
+    ./example/foldmason_result
+    ./example/foldmason_result/3A0C-assembly1.cif
+    ./example/foldmason_result/foldmason.json
+    ./example/foldmason_result/L7RCY6.pdb
+    ./example/foldseek_result
+    ./example/foldseek_result/DB1
+    ./example/foldseek_result/DB2
+    ./example/foldseek_result/result
+    ./example/foldseek_result/result_multimer
+    ./example/foldseek_result/result_multimer_report
+    ./example/L7RCY6.pdb
+    ./example/msa_result
+    ./example/msa_result/3A0C.m8
+    ./example/msa_result/msaDB
+    ./example/msa_result/msaDB.dbtype
+    ./example/msa_result/msaDB.index
+    ./example/msa_result/query.a3m
+    ./example/msa_result/query.a3m.dbtype
+    ./example/msa_result/query.a3m.index
+    ./example/msa_result/query.fasta
+    ./example/msa_result/query.m8
+
+[5] README 참조 경로 존재 확인 (압축 해제 결과 기준)
+    OK   example/1CJK-assembly1.cif
+    OK   example/1NPL-assembly1.cif
+    OK   example/3A0C-assembly1.cif
+    OK   example/3A0C-assembly1_colabfold.pdb
+    OK   example/3HGM-assembly1.cif
+    OK   example/3OAG-assembly1.cif
+    OK   example/8KGM-assembly1.cif
+    OK   example/9FL9-assembly1.cif
+    OK   example/9N47-assembly1.cif
+    OK   example/AF-A0A233SAX3-F1-model_v6.cif
+    OK   example/chainfile_9N47.tsv
+    OK   example/foldmason_result/foldmason.json
+    OK   example/foldseek_result/DB1/
+    OK   example/foldseek_result/DB1/3cna-assembly1.cif
+    OK   example/foldseek_result/DB2/
+    OK   example/foldseek_result/result
+    OK   example/foldseek_result/result_multimer_report
+    OK   example/L7RCY6.pdb
+    OK   example/msa_result/query.a3m
+  누락 0/19
+
+[6] 로컬 /home/user1/src/StrucTTY/example 와 README 참조 경로 대조
+  로컬 트리(2단계):
+    example
+    example/DB1
+    example/DB1/3cna-assembly1.cif
+    example/DB2
+    example/DB2/2PEL.cif
+    example/DB2/4K1Z.cif
+    example/DB2/A0A8S5UY68.pdb
+    example/result
+    example/result_multimer
+    example/result_multimer_report
+    MISS example/1CJK-assembly1.cif
+    MISS example/1NPL-assembly1.cif
+    MISS example/3A0C-assembly1.cif
+    MISS example/3A0C-assembly1_colabfold.pdb
+    MISS example/3HGM-assembly1.cif
+    MISS example/3OAG-assembly1.cif
+    MISS example/8KGM-assembly1.cif
+    MISS example/9FL9-assembly1.cif
+    MISS example/9N47-assembly1.cif
+    MISS example/AF-A0A233SAX3-F1-model_v6.cif
+    MISS example/chainfile_9N47.tsv
+    MISS example/foldmason_result/foldmason.json
+    MISS example/foldseek_result/DB1/
+    MISS example/foldseek_result/DB1/3cna-assembly1.cif
+    MISS example/foldseek_result/DB2/
+    MISS example/foldseek_result/result
+    MISS example/foldseek_result/result_multimer_report
+    MISS example/L7RCY6.pdb
+    MISS example/msa_result/query.a3m
+  누락 19/19

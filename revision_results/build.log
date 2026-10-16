@@ -1,0 +1,41 @@
+[  4%] Building CXX object src/render/CMakeFiles/structty_render.dir/Renderer.cpp.o
+[  9%] Building CXX object src/render/CMakeFiles/structty_render.dir/AnsiOutput.cpp.o
+[ 13%] Linking CXX static library libstructty_render.a
+[ 13%] Built target structty_render
+[ 18%] Building CXX object CMakeFiles/structty.dir/src/structty.cpp.o
+[ 22%] Building CXX object CMakeFiles/structty.dir/src/structure/FoldMasonParser.cpp.o
+[ 27%] Building CXX object CMakeFiles/structty.dir/src/structure/InputProbe.cpp.o
+[ 36%] Building CXX object CMakeFiles/structty.dir/src/structure/MultimerReportParser.cpp.o
+[ 36%] Building CXX object CMakeFiles/structty.dir/src/structure/MSAParser.cpp.o
+[ 40%] Building CXX object CMakeFiles/structty.dir/src/structure/PDBDownloader.cpp.o
+[ 45%] Building CXX object CMakeFiles/structty.dir/src/structure/SSPredictor.cpp.o
+[ 54%] Building CXX object CMakeFiles/structty.dir/src/structure/FoldseekDBReader.cpp.o
+[ 54%] Building CXX object CMakeFiles/structty.dir/src/structure/FoldseekParser.cpp.o
+[ 59%] Building CXX object CMakeFiles/structty.dir/src/structure/Parameters.cpp.o
+[ 63%] Building CXX object CMakeFiles/structty.dir/src/structure/Protein.cpp.o
+[ 68%] Building CXX object CMakeFiles/structty.dir/src/visualization/Camera.cpp.o
+[ 72%] Building CXX object CMakeFiles/structty.dir/src/visualization/Panel.cpp.o
+[ 77%] Building CXX object CMakeFiles/structty.dir/src/structure/StructureMaker.cpp.o
+[ 81%] Building CXX object CMakeFiles/structty.dir/src/utils/Terminal.cpp.o
+[ 86%] Building CXX object CMakeFiles/structty.dir/src/visualization/Screen.cpp.o
+/home/user1/src/StrucTTY/src/utils/Terminal.cpp: In function ‘void Terminal::enter_raw_mode()’:
+/home/user1/src/StrucTTY/src/utils/Terminal.cpp:62:10: warning: ignoring return value of ‘ssize_t write(int, const void*, size_t)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   62 |     write(STDOUT_FILENO, enable, sizeof(enable) - 1);
+      |     ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/user1/src/StrucTTY/src/utils/Terminal.cpp: In function ‘void Terminal::do_exit_raw()’:
+/home/user1/src/StrucTTY/src/utils/Terminal.cpp:32:10: warning: ignoring return value of ‘ssize_t write(int, const void*, size_t)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   32 |     write(STDOUT_FILENO, disable, sizeof(disable) - 1);
+      |     ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/user1/src/StrucTTY/src/utils/Terminal.cpp: In function ‘void Terminal::clear()’:
+/home/user1/src/StrucTTY/src/utils/Terminal.cpp:83:10: warning: ignoring return value of ‘ssize_t write(int, const void*, size_t)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   83 |     write(STDOUT_FILENO, "\033[2J\033[H", 7);
+      |     ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/user1/src/StrucTTY/src/utils/Terminal.cpp: In function ‘void Terminal::cursor_home()’:
+/home/user1/src/StrucTTY/src/utils/Terminal.cpp:88:10: warning: ignoring return value of ‘ssize_t write(int, const void*, size_t)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   88 |     write(STDOUT_FILENO, "\033[H", 3);
+      |     ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ 90%] Linking CXX static library libstructty.a
+[ 90%] Built target structty
+[ 95%] Building CXX object CMakeFiles/StrucTTY.dir/src/main.cpp.o
+[100%] Linking CXX executable StrucTTY
+[100%] Built target StrucTTY

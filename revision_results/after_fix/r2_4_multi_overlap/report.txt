@@ -1,0 +1,354 @@
+--- [mixed_n2 @ 80x24] n=2 ---
+file          : /home/user1/src/StrucTTY_benchmark/revision_results_fixed/r2_4_multi_overlap/mixed_n2_80x24.ansi
+structures    : 2
+glyphs        : 152
+  protein 0: glyphs=   49  bbox rows   6-  8, cols  10- 29
+  protein 1: glyphs=  103  bbox rows   5-  9, cols  47- 79
+  --- bbox 교차 ---
+  없음
+  --- 동일 셀 점유 충돌 ---
+  없음
+
+--- [mixed_n2 @ 120x40] n=2 ---
+file          : /home/user1/src/StrucTTY_benchmark/revision_results_fixed/r2_4_multi_overlap/mixed_n2_120x40.ansi
+structures    : 2
+glyphs        : 343
+  protein 0: glyphs=  111  bbox rows  11- 16, cols  15- 44
+  protein 1: glyphs=  232  bbox rows   9- 17, cols  70-118
+  --- bbox 교차 ---
+  없음
+  --- 동일 셀 점유 충돌 ---
+  없음
+
+--- [mixed_n2 @ 200x60] n=2 ---
+file          : /home/user1/src/StrucTTY_benchmark/revision_results_fixed/r2_4_multi_overlap/mixed_n2_200x60.ansi
+structures    : 2
+glyphs        : 698
+  protein 0: glyphs=  211  bbox rows  18- 26, cols  26- 72
+  protein 1: glyphs=  487  bbox rows  16- 28, cols 117-197
+  --- bbox 교차 ---
+  없음
+  --- 동일 셀 점유 충돌 ---
+  없음
+
+--- [mixed_n3 @ 80x24] n=3 ---
+file          : /home/user1/src/StrucTTY_benchmark/revision_results_fixed/r2_4_multi_overlap/mixed_n3_80x24.ansi
+structures    : 3
+glyphs        : 91
+  protein 0: glyphs=   14  bbox rows   6-  7, cols  12- 18
+  protein 1: glyphs=   23  bbox rows   6-  7, cols  35- 46
+  protein 2: glyphs=   54  bbox rows   5-  8, cols  55- 75
+  --- bbox 교차 ---
+  없음
+  --- 동일 셀 점유 충돌 ---
+  없음
+
+--- [mixed_n3 @ 120x40] n=3 ---
+file          : /home/user1/src/StrucTTY_benchmark/revision_results_fixed/r2_4_multi_overlap/mixed_n3_120x40.ansi
+structures    : 3
+glyphs        : 167
+  protein 0: glyphs=   25  bbox rows  12- 14, cols  18- 27
+  protein 1: glyphs=   42  bbox rows  12- 14, cols  53- 68
+  protein 2: glyphs=  100  bbox rows  11- 16, cols  82-113
+  --- bbox 교차 ---
+  없음
+  --- 동일 셀 점유 충돌 ---
+  없음
+
+--- [mixed_n3 @ 200x60] n=3 ---
+file          : /home/user1/src/StrucTTY_benchmark/revision_results_fixed/r2_4_multi_overlap/mixed_n3_200x60.ansi
+structures    : 3
+glyphs        : 338
+  protein 0: glyphs=   38  bbox rows  19- 21, cols  30- 44
+  protein 1: glyphs=   75  bbox rows  18- 22, cols  89-113
+  protein 2: glyphs=  225  bbox rows  16- 24, cols 137-187
+  --- bbox 교차 ---
+  없음
+  --- 동일 셀 점유 충돌 ---
+  없음
+
+--- [mixed_n4 @ 80x24] n=4 ---
+file          : /home/user1/src/StrucTTY_benchmark/revision_results_fixed/r2_4_multi_overlap/mixed_n4_80x24.ansi
+structures    : 4
+glyphs        : 202
+  protein 0: glyphs=   13  bbox rows   2-  3, cols  20- 26
+  protein 1: glyphs=   22  bbox rows   2-  3, cols  53- 63
+  protein 2: glyphs=   51  bbox rows   8- 10, cols  12- 33
+  protein 3: glyphs=  116  bbox rows   7- 11, cols  43- 73
+  --- bbox 교차 ---
+  없음
+  --- 동일 셀 점유 충돌 ---
+  없음
+
+--- [mixed_n4 @ 120x40] n=4 ---
+file          : /home/user1/src/StrucTTY_benchmark/revision_results_fixed/r2_4_multi_overlap/mixed_n4_120x40.ansi
+structures    : 4
+glyphs        : 527
+  protein 0: glyphs=   20  bbox rows   6-  8, cols  29- 38
+  protein 1: glyphs=   42  bbox rows   6-  9, cols  80- 95
+  protein 2: glyphs=  115  bbox rows  18- 24, cols  17- 48
+  protein 3: glyphs=  350  bbox rows  15- 27, cols  64-111
+  --- bbox 교차 ---
+  없음
+  --- 동일 셀 점유 충돌 ---
+  없음
+
+--- [mixed_n4 @ 200x60] n=4 ---
+file          : /home/user1/src/StrucTTY_benchmark/revision_results_fixed/r2_4_multi_overlap/mixed_n4_200x60.ansi
+structures    : 4
+glyphs        : 1093
+  protein 0: glyphs=   39  bbox rows   9- 12, cols  48- 63
+  protein 1: glyphs=   75  bbox rows   8- 12, cols 134-158
+  protein 2: glyphs=  233  bbox rows  26- 34, cols  28- 79
+  protein 3: glyphs=  746  bbox rows  21- 38, cols 107-184
+  --- bbox 교차 ---
+  없음
+  --- 동일 셀 점유 충돌 ---
+  없음
+
+--- [mixed_n5 @ 80x24] n=5 ---
+file          : /home/user1/src/StrucTTY_benchmark/revision_results_fixed/r2_4_multi_overlap/mixed_n5_80x24.ansi
+structures    : 5
+glyphs        : 134
+  protein 0: glyphs=    8  bbox rows   2-  3, cols  15- 18
+  protein 1: glyphs=    8  bbox rows   2-  3, cols  39- 42
+  protein 2: glyphs=   16  bbox rows   2-  3, cols  61- 68
+  protein 3: glyphs=   20  bbox rows   8-  9, cols  12- 21
+  protein 4: glyphs=   82  bbox rows   6- 10, cols  30- 51
+  --- bbox 교차 ---
+  없음
+  --- 동일 셀 점유 충돌 ---
+  없음
+
+--- [mixed_n5 @ 120x40] n=5 ---
+file          : /home/user1/src/StrucTTY_benchmark/revision_results_fixed/r2_4_multi_overlap/mixed_n5_120x40.ansi
+structures    : 5
+glyphs        : 412
+  protein 0: glyphs=    9  bbox rows   6-  7, cols  18- 22
+  protein 1: glyphs=   13  bbox rows   6-  7, cols  58- 64
+  protein 2: glyphs=   24  bbox rows   6-  8, cols  95-106
+  protein 3: glyphs=   60  bbox rows  18- 22, cols  12- 28
+  protein 4: glyphs=  306  bbox rows  15- 26, cols  44- 78
+  --- bbox 교차 ---
+  없음
+  --- 동일 셀 점유 충돌 ---
+  없음
+
+--- [mixed_n5 @ 200x60] n=5 ---
+file          : /home/user1/src/StrucTTY_benchmark/revision_results_fixed/r2_4_multi_overlap/mixed_n5_200x60.ansi
+structures    : 5
+glyphs        : 913
+  protein 0: glyphs=   10  bbox rows   9- 11, cols  31- 36
+  protein 1: glyphs=   24  bbox rows   9- 11, cols  96-105
+  protein 2: glyphs=   47  bbox rows   9- 12, cols 158-176
+  protein 3: glyphs=  123  bbox rows  29- 35, cols  21- 46
+  protein 4: glyphs=  709  bbox rows  23- 41, cols  73-129
+  --- bbox 교차 ---
+  없음
+  --- 동일 셀 점유 충돌 ---
+  없음
+
+--- [same_n2 @ 80x24] n=2 ---
+file          : /home/user1/src/StrucTTY_benchmark/revision_results_fixed/r2_4_multi_overlap/same_n2_80x24.ansi
+structures    : 2
+glyphs        : 207
+  protein 0: glyphs=  104  bbox rows   5-  9, cols   5- 38
+  protein 1: glyphs=  103  bbox rows   5-  9, cols  47- 79
+  --- bbox 교차 ---
+  없음
+  --- 동일 셀 점유 충돌 ---
+  없음
+
+--- [same_n2 @ 120x40] n=2 ---
+file          : /home/user1/src/StrucTTY_benchmark/revision_results_fixed/r2_4_multi_overlap/same_n2_120x40.ansi
+structures    : 2
+glyphs        : 467
+  protein 0: glyphs=  235  bbox rows   9- 17, cols   7- 56
+  protein 1: glyphs=  232  bbox rows   9- 17, cols  70-118
+  --- bbox 교차 ---
+  없음
+  --- 동일 셀 점유 충돌 ---
+  없음
+
+--- [same_n2 @ 200x60] n=2 ---
+file          : /home/user1/src/StrucTTY_benchmark/revision_results_fixed/r2_4_multi_overlap/same_n2_200x60.ansi
+structures    : 2
+glyphs        : 977
+  protein 0: glyphs=  490  bbox rows  15- 28, cols  12- 92
+  protein 1: glyphs=  487  bbox rows  16- 28, cols 117-197
+  --- bbox 교차 ---
+  없음
+  --- 동일 셀 점유 충돌 ---
+  없음
+
+--- [same_n4 @ 80x24] n=4 ---
+file          : /home/user1/src/StrucTTY_benchmark/revision_results_fixed/r2_4_multi_overlap/same_n4_80x24.ansi
+structures    : 4
+glyphs        : 427
+  protein 0: glyphs=  105  bbox rows   2-  5, cols   5- 38
+  protein 1: glyphs=  104  bbox rows   2-  5, cols  47- 79
+  protein 2: glyphs=  109  bbox rows   7- 10, cols   5- 38
+  protein 3: glyphs=  109  bbox rows   7- 10, cols  47- 79
+  --- bbox 교차 ---
+  없음
+  --- 동일 셀 점유 충돌 ---
+  없음
+
+--- [same_n4 @ 120x40] n=4 ---
+file          : /home/user1/src/StrucTTY_benchmark/revision_results_fixed/r2_4_multi_overlap/same_n4_120x40.ansi
+structures    : 4
+glyphs        : 985
+  protein 0: glyphs=  243  bbox rows   5- 13, cols   7- 56
+  protein 1: glyphs=  245  bbox rows   5- 13, cols  70-118
+  protein 2: glyphs=  249  bbox rows  15- 23, cols   7- 56
+  protein 3: glyphs=  248  bbox rows  15- 23, cols  70-118
+  --- bbox 교차 ---
+  없음
+  --- 동일 셀 점유 충돌 ---
+  없음
+
+--- [same_n4 @ 200x60] n=4 ---
+file          : /home/user1/src/StrucTTY_benchmark/revision_results_fixed/r2_4_multi_overlap/same_n4_200x60.ansi
+structures    : 4
+glyphs        : 1847
+  protein 0: glyphs=  458  bbox rows   7- 19, cols  12- 92
+  protein 1: glyphs=  455  bbox rows   8- 19, cols 117-197
+  protein 2: glyphs=  464  bbox rows  21- 33, cols  12- 92
+  protein 3: glyphs=  470  bbox rows  21- 33, cols 117-197
+  --- bbox 교차 ---
+  없음
+  --- 동일 셀 점유 충돌 ---
+  없음
+
+--- [same_n6 @ 80x24] n=6 ---
+file          : /home/user1/src/StrucTTY_benchmark/revision_results_fixed/r2_4_multi_overlap/same_n6_80x24.ansi
+structures    : 6
+glyphs        : 325
+  protein 0: glyphs=   55  bbox rows   2-  4, cols   4- 26
+  protein 1: glyphs=   55  bbox rows   2-  4, cols  30- 52
+  protein 2: glyphs=   55  bbox rows   2-  4, cols  57- 78
+  protein 3: glyphs=   54  bbox rows   6-  8, cols   4- 26
+  protein 4: glyphs=   53  bbox rows   6-  8, cols  30- 52
+  protein 5: glyphs=   53  bbox rows   6-  8, cols  57- 78
+  --- bbox 교차 ---
+  없음
+  --- 동일 셀 점유 충돌 ---
+  없음
+
+--- [same_n6 @ 120x40] n=6 ---
+file          : /home/user1/src/StrucTTY_benchmark/revision_results_fixed/r2_4_multi_overlap/same_n6_120x40.ansi
+structures    : 6
+glyphs        : 733
+  protein 0: glyphs=  123  bbox rows   7- 12, cols   6- 38
+  protein 1: glyphs=  121  bbox rows   7- 12, cols  46- 77
+  protein 2: glyphs=  120  bbox rows   7- 12, cols  85-117
+  protein 3: glyphs=  124  bbox rows  14- 19, cols   6- 38
+  protein 4: glyphs=  122  bbox rows  14- 19, cols  46- 77
+  protein 5: glyphs=  123  bbox rows  14- 19, cols  85-117
+  --- bbox 교차 ---
+  없음
+  --- 동일 셀 점유 충돌 ---
+  없음
+
+--- [same_n6 @ 200x60] n=6 ---
+file          : /home/user1/src/StrucTTY_benchmark/revision_results_fixed/r2_4_multi_overlap/same_n6_200x60.ansi
+structures    : 6
+glyphs        : 1550
+  protein 0: glyphs=  257  bbox rows  12- 19, cols  10- 63
+  protein 1: glyphs=  260  bbox rows  12- 19, cols  76-128
+  protein 2: glyphs=  260  bbox rows  12- 19, cols 142-194
+  protein 3: glyphs=  256  bbox rows  21- 28, cols  10- 63
+  protein 4: glyphs=  258  bbox rows  21- 28, cols  76-128
+  protein 5: glyphs=  259  bbox rows  21- 28, cols 142-194
+  --- bbox 교차 ---
+  없음
+  --- 동일 셀 점유 충돌 ---
+  없음
+
+--- [same_n9 @ 80x24] n=9 ---
+file          : /home/user1/src/StrucTTY_benchmark/revision_results_fixed/r2_4_multi_overlap/same_n9_80x24.ansi
+structures    : 9
+glyphs        : 177
+ambiguous code: [130] -> 14 glyph 제외 (protein 테이블 간 중복)
+  protein 0: glyphs=   15  bbox rows   1-  1, cols  17- 31
+  protein 1: glyphs=   15  bbox rows   1-  1, cols  34- 48
+  protein 2: glyphs=   15  bbox rows   1-  1, cols  50- 64
+  protein 3: glyphs=   29  bbox rows   3-  4, cols  17- 31
+  protein 4: glyphs=   29  bbox rows   3-  4, cols  34- 48
+  protein 5: glyphs=   20  bbox rows   3-  4, cols  55- 64
+  protein 6: glyphs=   10  bbox rows   6-  6, cols  17- 30
+  protein 7: glyphs=   15  bbox rows   6-  6, cols  34- 48
+  protein 8: glyphs=   15  bbox rows   6-  6, cols  50- 64
+  --- bbox 교차 ---
+  없음
+  --- 동일 셀 점유 충돌 ---
+  없음
+
+--- [same_n9 @ 120x40] n=9 ---
+file          : /home/user1/src/StrucTTY_benchmark/revision_results_fixed/r2_4_multi_overlap/same_n9_120x40.ansi
+structures    : 9
+glyphs        : 1055
+ambiguous code: [130] -> 94 glyph 제외 (protein 테이블 간 중복)
+  protein 0: glyphs=  120  bbox rows   3-  8, cols   6- 38
+  protein 1: glyphs=  116  bbox rows   3-  8, cols  46- 77
+  protein 2: glyphs=  118  bbox rows   3-  8, cols  85-117
+  protein 3: glyphs=  120  bbox rows   9- 14, cols   6- 38
+  protein 4: glyphs=  115  bbox rows   9- 14, cols  46- 77
+  protein 5: glyphs=   80  bbox rows   9- 14, cols  96-117
+  protein 6: glyphs=   59  bbox rows  16- 19, cols   6- 35
+  protein 7: glyphs=  117  bbox rows  15- 20, cols  46- 77
+  protein 8: glyphs=  116  bbox rows  15- 20, cols  85-117
+  --- bbox 교차 ---
+  없음
+  --- 동일 셀 점유 충돌 ---
+  없음
+
+--- [same_n9 @ 200x60] n=9 ---
+file          : /home/user1/src/StrucTTY_benchmark/revision_results_fixed/r2_4_multi_overlap/same_n9_200x60.ansi
+structures    : 9
+glyphs        : 2398
+ambiguous code: [130] -> 216 glyph 제외 (protein 테이블 간 중복)
+  protein 0: glyphs=  268  bbox rows   8- 16, cols  10- 63
+  protein 1: glyphs=  268  bbox rows   8- 16, cols  76-128
+  protein 2: glyphs=  265  bbox rows   8- 16, cols 142-194
+  protein 3: glyphs=  263  bbox rows  17- 26, cols  10- 63
+  protein 4: glyphs=  269  bbox rows  17- 26, cols  76-128
+  protein 5: glyphs=  177  bbox rows  17- 26, cols 160-194
+  protein 6: glyphs=  140  bbox rows  28- 34, cols  10- 58
+  protein 7: glyphs=  267  bbox rows  27- 35, cols  76-128
+  protein 8: glyphs=  265  bbox rows  27- 35, cols 142-194
+  --- bbox 교차 ---
+  없음
+  --- 동일 셀 점유 충돌 ---
+  없음
+
+--- [single @ 80x24] n=1 ---
+file          : /home/user1/src/StrucTTY_benchmark/revision_results_fixed/r2_4_multi_overlap/single_80x24.ansi
+structures    : 1
+glyphs        : 168
+  protein 0: glyphs=  168  bbox rows   5- 11, cols  20- 63
+  --- bbox 교차 ---
+  없음
+  --- 동일 셀 점유 충돌 ---
+  없음
+
+--- [single @ 120x40] n=1 ---
+file          : /home/user1/src/StrucTTY_benchmark/revision_results_fixed/r2_4_multi_overlap/single_120x40.ansi
+structures    : 1
+glyphs        : 315
+  protein 0: glyphs=  315  bbox rows   8- 20, cols  30- 94
+  --- bbox 교차 ---
+  없음
+  --- 동일 셀 점유 충돌 ---
+  없음
+
+--- [single @ 200x60] n=1 ---
+file          : /home/user1/src/StrucTTY_benchmark/revision_results_fixed/r2_4_multi_overlap/single_200x60.ansi
+structures    : 1
+glyphs        : 613
+  protein 0: glyphs=  613  bbox rows  14- 35, cols  50-155
+  --- bbox 교차 ---
+  없음
+  --- 동일 셀 점유 충돌 ---
+  없음
+
