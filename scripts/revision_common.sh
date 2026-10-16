@@ -1,6 +1,4 @@
 #!/bin/bash
-# 리비전(BIOADV-2026-562) 재현 스크립트 공용 설정.
-# 각 revision_*.sh 가 source 한다.
 
 set -euo pipefail
 
@@ -11,12 +9,7 @@ BENCH_DIR="${BENCH_DIR:-$HOME/src/StrucTTY_benchmark/benchmark}"
 EXAMPLE_DIR="${EXAMPLE_DIR:-$STRUCTTY_DIR/example}"
 RESULTS_ROOT="${RESULTS_ROOT:-$HOME/src/StrucTTY_benchmark/revision_results}"
 
-# 헤드리스 캡처: stdout 을 파일로 돌리면 Terminal::get_size() 의 ioctl 이 실패해
-# 80x24 폴백이 걸린다(src/utils/Terminal.cpp:76-79). 터미널 크기가 고정되므로
-# 프레임 바이트 비교가 가능하다. stdin 이 tty 가 아니면 raw mode 없이 진행되고
-# read_key() 가 파이프에서 바이트를 읽는다(src/utils/Terminal.cpp:43, :107).
 capture_frame() {
-    # capture_frame <out_prefix> <args...>
     local out="$1"; shift
     printf 'q' | "$BINARY" "$@" > "${out}.ansi" 2> "${out}.err" || true
     printf '%s' "$(md5sum < "${out}.ansi" | cut -d' ' -f1)"
@@ -30,7 +23,6 @@ require_binary() {
     fi
 }
 
-# REBUILD=1 이면 현재 소스로 다시 빌드한다.
 maybe_rebuild() {
     if [ "${REBUILD:-0}" = "1" ]; then
         echo "--- rebuild: $STRUCTTY_DIR ($(git -C "$STRUCTTY_DIR" rev-parse --short HEAD)) ---"

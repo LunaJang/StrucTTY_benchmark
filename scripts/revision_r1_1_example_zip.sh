@@ -1,15 +1,4 @@
 #!/bin/bash
-# 리비전 R1-1 재현: "GitHub 안내는 따라갔지만 ZIP 압축을 풀어 예제를 쓸 수 없었다".
-#
-# 검증:
-#   1. README 의 다운로드 URL·unzip 명령·본문이 참조하는 ../example/... 경로 추출
-#   1b. 릴리스 태그 'data'(https://github.com/steineggerlab/StrucTTY/releases/tag/data)가
-#       실제로 가리키는 자산 URL 과 README 링크를 대조
-#   2. 다운로드 시도 (README 링크 -> 실패 시 릴리스 링크)
-#   3. zip 무결성(unzip -t) 과 최상위 구조 -> README 의 `unzip -d example` 과 맞물려
-#      example/example/... 같은 이중 중첩이 생기는가
-#   4. README 참조 경로가 압축 해제 결과에 실제로 있는가
-#   5. 로컬 $EXAMPLE_DIR 레이아웃과 README 참조 경로 대조
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 source "$SCRIPT_DIR/revision_common.sh"
@@ -20,7 +9,6 @@ README="$STRUCTTY_DIR/README.md"
 REPORT="$RESULT_DIR/report.txt"
 : > "$REPORT"
 
-# 파이프 서브셸에서 변수가 날아가지 않도록 로그는 함수로 찍는다.
 log() { printf '%s\n' "$*" | tee -a "$REPORT"; }
 
 echo "=== R1-1 예제 ZIP 재현 ==="
@@ -32,7 +20,6 @@ if [ ! -f "$README" ]; then
     echo "ERROR: README 없음: $README"; exit 1
 fi
 
-# --- 1. README 가 참조하는 경로/URL 수집 -------------------------------------
 URL="$(grep -oE 'https://github\.com/user-attachments/files/[^ )"]+\.zip' "$README" | head -1)"
 UNZIP_CMD="$(grep -nE '^\s*unzip ' "$README" | head -1 | sed 's/^[0-9]*://')"
 mapfile -t REF_PATHS < <(grep -oE '\.\./example/[A-Za-z0-9._/-]+' "$README" | sed 's|^\.\./||' | sort -u)
@@ -44,7 +31,6 @@ log "  참조 경로 수 : ${#REF_PATHS[@]}"
 for p in "${REF_PATHS[@]}"; do log "    $p"; done
 log ""
 
-# --- 1b. 릴리스 태그 'data' 가 가리키는 실제 자산 ----------------------------
 RELEASE_API="${RELEASE_API:-https://api.github.com/repos/steineggerlab/StrucTTY/releases/tags/data}"
 RELEASE_URL=""
 log "[1b] 릴리스 태그 'data' 조회"
@@ -73,7 +59,6 @@ else
 fi
 log ""
 
-# --- 2. 다운로드 시도 --------------------------------------------------------
 ZIP="$RESULT_DIR/example.zip"
 DOWNLOADED=0
 SOURCE_USED=""
@@ -102,7 +87,6 @@ else
 fi
 log ""
 
-# --- 3~4. zip 구조 + README 지시대로 압축 해제 -------------------------------
 if [ "$DOWNLOADED" = "1" ]; then
     log "[3] zip 무결성·구조 (source=$SOURCE_USED)"
     if unzip -t "$ZIP" > "$RESULT_DIR/unzip_t.log" 2>&1; then
@@ -149,7 +133,6 @@ else
     log ""
 fi
 
-# --- 6. 로컬 example/ 대조 ---------------------------------------------------
 log "[6] 로컬 $EXAMPLE_DIR 와 README 참조 경로 대조"
 if [ ! -d "$EXAMPLE_DIR" ]; then
     log "  로컬 example/ 없음"

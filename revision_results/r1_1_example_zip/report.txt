@@ -1,5 +1,5 @@
 [1] README 추출
-  download URL : https://github.com/user-attachments/files/31204019/structty_example.zip
+  download URL : https://github.com/user-attachments/files/31627970/structty_example.zip
   unzip 명령   : unzip -d example example.zip && rm example.zip
   참조 경로 수 : 19
     example/1CJK-assembly1.cif
@@ -24,16 +24,11 @@
 
 [1b] 릴리스 태그 'data' 조회
   release 자산 URL : https://github.com/user-attachments/files/31627970/structty_example.zip
-  !! README 링크와 릴리스 링크가 다르다
-     README : https://github.com/user-attachments/files/31204019/structty_example.zip
-     release: https://github.com/user-attachments/files/31627970/structty_example.zip
 
 [2] 다운로드
-  README 링크 FAIL: HTTP 404 (대조군 github.com=200)
-  릴리스 링크 OK: 2425098 bytes
-  => README 의 zip URL 만 죽어 있다. R1-1 의 직접 원인.
+  README 링크 OK: 2425098 bytes
 
-[3] zip 무결성·구조 (source=release)
+[3] zip 무결성·구조 (source=readme)
   unzip -t : OK
   엔트리 수 : 36
   최상위    :
