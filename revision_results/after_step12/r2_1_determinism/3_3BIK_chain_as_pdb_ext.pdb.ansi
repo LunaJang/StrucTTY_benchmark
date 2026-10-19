@@ -1,0 +1,9 @@
+Input parameters >> 
+  in_file: 
+	/home/user1/src/StrucTTY_benchmark/revision_results/after_step12/r2_1_determinism/work/as_pdb_ext.pdb
+  mode: chain
+  chainfile: 
+  show_structure: 0
+  benchmark_mode: 0
+
+[H[1;1H[K[2;1H[K[3;1H[K[4;1H[K[5;1H[K[6;1H[K[7;1H[K[8;1H[K[9;1H[K[10;1H[K[11;1H[K[12;1H[K[13;1H[K[14;1H[K[15;1H[K[15;1H*==============================================================================[16;1H[K[16;1HW A S D : ^ < v >  R F : Zoom In/Out  X Y Z : Rotate X, Y, Z axis  C : Screensh[17;1H[K[17;1H[17;1H-------------------------------------------------------------------------------[18;1H[K[18;1H/home/user1/src/StrucTTY_benchmark/revision_results/after_step12/r2_1_determini[19;1H[K[19;1H[19;1H-------------------------------------------------------------------------------[20;1H[K[20;1HResidue Info[21;1H[K[21;1HChain: -[22;1H[K[22;1HRes:   -[23;1H[K[23;1HSS:    -[24;1H[K[24;1H*==============================================================================

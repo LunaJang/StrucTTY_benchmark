@@ -1,0 +1,19 @@
+  3 ..............................jjjj....................................fff....................................bbb.....
+  4 ......eeeeeeeeee.eeeeejjjjrrrrrjjjj..........cccccccccc..cccccfffooooofffff.........aaaaaaaaaaa.aaaaabbabkkkkbbbbb...
+  5 .....eeeeeeeeeeeejjjjjjjjrrrrrrjjjjjjj.......cccccccccccfffffffffooooofffffff.......aaaaaaaaaaaabbbbbbbbkkkkkkbbbbbbb
+  6 .......eeeeeeeeejjjjjjjjjrrrrrrjjjjjjj.........cccc.ccccffffffffoooooofffffff.........aaaa.aaaabbbbbbbbbkkkkkkbbbbbb.
+  7 ................ejjjjjjjjrrrrrjjrrrj....................cffffffffoooofffooof...................abbbbbbbbkkkkkbbkkkb..
+  8 .................................jjjj...................................ffff...................................bbbb..
+  9 ..............................llll....................................uuu....................................sss.....
+ 10 .....ddddddddddd.dddddllllqqqqqllll..........iiiiiiiiii..iiiiiuuuyyyyyuuuuu.........mmmmmmmmmmm.mmmmmssssxxxxxssss...
+ 11 .....dddddddddddlllllllllqqqqqqlllllll.......iiiiiiiiiiiuuuuuuuuyyyyyyuuuuuuu.......mmmmmmmmmmmsssssssssxxxxxxsssssss
+ 12 .......ddddd.ddddllllllllqqqqqqlllllll.........iiii.iiiiuuuuuuuuyyyyyyuuuuuuu.........mmmm.mmmmmssssssssxxxxxxssssss.
+ 13 ................ddlllllllqqqqqllqqqll...................iuuuuuuuuyyyyuuuyyyu...................mmsssssssxxxxxssxxxs..
+ 14 .................................lll....................................uuu....................................ssss..
+ 15 ..............................mmmm...................................vvvvv..................................ppppp....
+ 16 .....hhhhhhhhhhh.hhhhhmmmmwwwwwmmmm..........nnnnnnnnnnn.nnnnvvvvzzzzzvvvvv.........ggggggggggg.gggggpppptttttpppp...
+ 17 ......hhhhhhhhhhmmmmmmmmmwwwwwhmmmmmmm.......nnnnnnnnnnnvvvvvvvvzzzzzzvvvvvvv.......gggggggggggppppppppptttttgppppppp
+ 18 ........hhh..hhhhmmmmmmmmwwwwwwmmwmmm..........nnn..nnnnvvvvvvvvzzzzzzvvzvvvv..........ggg..ggggppppppppttttttpptppp.
+ 19 .................hmmmmmmmwwwwmmmwwwmm...................nvvvvvvvvzzzzvvvzzzv....................gpppppppttttppptttp..
+ 20 .................................mmm....................................vvv.....................................ppp..
+legend: a=xterm18, b=xterm27, c=xterm30, d=xterm54, e=xterm58, f=xterm80, g=xterm88, h=xterm94, i=xterm96, j=xterm100, k=xterm105, l=xterm129, m=xterm130, n=xterm136, o=xterm159, p=xterm160, q=xterm177, r=xterm184, s=xterm209, t=xterm210, u=xterm213, v=xterm214, w=xterm220, x=xterm223, y=xterm225, z=xterm229

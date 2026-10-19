@@ -1,0 +1,6 @@
+  5 ..................................................................ca.ccccccc...
+  6 ..........dddddbdddddddddfddd.................aaaaaaaaaaaaaacccccceeeeeecccccc.
+  7 .........dddddddddddffffffddd.................aaaaaaaaaaaccccccccceeeeeeccccccc
+  8 ...........bdddddd..ddd................................aaacccccccceeeeeeceeec..
+  9 ..................................................................aa.....ceecc.
+legend: a=xterm30, b=xterm58, c=xterm80, d=xterm100, e=xterm159, f=xterm184

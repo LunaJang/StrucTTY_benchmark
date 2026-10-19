@@ -1,0 +1,8 @@
+  2 ....eeeeee..e.eeehehhhh.......cccc.cc.c..ccfffffff......aaaaaaa.aa.aabbabbbb..
+  3 ...eeeeeeeehhhhhnnnnnhnhhh...ccccccccffffffllllflfff....aaaaaaabbbbbbiiiibibbb
+  4 .........eehhhhhnnnnhnnnh..........cccffffflllllllf...........aabbbbbiiiibiib.
+  5 ..............................................................................
+  6 ...ddddddddddjjjjmmmmjjjj....ggggggggggpppprrrrpppp.....kkkkkkkkkkoooqqqqooooo
+  7 ....dddddddjjjjjmmmmmmmmjj....gggggggpppppprrrrrrrpp....kkkkkkkooooooqqqqoqqoo
+  8 ...............jjjdjjjmjj.................pppppprrp.................ooooooqqo.
+legend: a=xterm18, b=xterm27, c=xterm30, d=xterm54, e=xterm58, f=xterm80, g=xterm96, h=xterm100, i=xterm105, j=xterm129, k=xterm130, l=xterm159, m=xterm177, n=xterm184, o=xterm209, p=xterm213, q=xterm223, r=xterm225

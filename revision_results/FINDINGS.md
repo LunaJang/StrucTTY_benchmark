@@ -129,3 +129,48 @@ StrucTTY 측 수정: 격자 간격을 실제 투영 크기 + 최소 여백(문�
    (n=6, 200x60 에서 쌍당 120 cell 교차) 과 수정 방침을 본문에 기재."
 3. R1-1 → "예제 배포 링크와 README 경로를 재정비했다. 저장소 경로와 1:1 로 맞는
    아카이브로 교체하고 다운로드·압축 해제·실행을 CI 에서 검증한다."
+
+---
+
+## R2-7 메모리 (peak RSS) — 측정 완료
+
+스크립트: `revision_r2_7_memory.sh` · 원자료: `r2_7_memory/memory.csv`
+
+| 시나리오 | 입력 | peak RSS |
+|---|---|---|
+| 단일 구조 | 1CRN (46 Cα) | 6.0 MB |
+| 단일 구조 | 1STP (121) | 7.3 MB |
+| 단일 구조 | 3BIK (446) | 13.4 MB |
+| 단일 구조 | 6VXX (2,916) | 44.7 MB |
+| 단일 구조 | 4V4Q (11,463) | 379.0 MB |
+| 다중 구조 | 3BIK × 3 | 13.8 MB |
+| 다중 구조 | 3BIK × 6 | 14.0 MB |
+| 다중 구조 | 3BIK × 9 | 14.4 MB |
+| Foldseek | m8 + 디렉터리 target | 21.9 MB |
+| Foldseek | 디렉터리 query 다중 순회 | 21.6 MB |
+| Foldseek | 멀티머 `_report` | 22.0 MB |
+| MSA | 3A0C + a3m conservation | 9.2 MB |
+| MSA | 3A0C (대조군, conservation 없음) | 9.2 MB |
+
+읽을 점 두 가지.
+- **구조를 더 열어도 메모리는 거의 안 는다** — 3BIK 1개 13.4 MB vs 9개 14.4 MB. 피크는 '가장 큰 파일 하나를 파싱하는 순간'이 지배하고, 파싱이 끝나면 Cα 만 남긴다.
+- **MSA 경로의 추가 비용은 측정 한계 이하** — conservation 유무가 9.2 MB 로 같다.
+
+## R2-6 macOS — CI 추가
+
+`.github/workflows/build.yml` 신설: macOS 14(Apple Silicon)·macOS 13(Intel)·Ubuntu 에서 서브모듈 포함 체크아웃 → CMake Release 빌드 → 릴리스 예제 데이터 내려받기 → 스모크 3종(단일 구조 렌더, Foldseek hit 렌더, a3m conservation). 예제 zip 내려받기가 CI 단계라 **R1-1 처럼 링크가 죽으면 CI 가 먼저 잡는다**. 스모크 명령 3개는 로컬에서 릴리스 데이터로 통과 확인(frame 6,236 B / hit 3,589 B / cons 5,737 B).
+
+## R3-M4 2차구조 휴리스틱 — 주석 대비 일치율
+
+스크립트: `revision_r3_m4_ss_agreement.sh` (StrucTTY `SSPredictor` 를 그대로 링크) · 원자료: `r3_m4_ss_agreement/agreement.txt`
+
+구조 17개(주석 없는 2개 제외), 잔기 **24,512개** 기준:
+
+| 지표 | 값 |
+|---|---|
+| 전체 일치율 | **71.2 %** |
+| helix recall / precision | 60.4 % / **98.0 %** |
+| sheet recall / precision | 78.8 % / 52.5 % |
+| coil recall | 74.3 % |
+
+해석: **helix 로 칠한 것은 거의 항상 실제 helix**(precision 98 %)지만 짧은 helix 를 놓친다(recall 60 %). sheet 는 반대로 넓게 잡는다(recall 79 %, precision 53 %). 표시용으로는 쓸 만하고 분석용 할당으로는 부적절하다는 서술과 맞는 수치다. `-s` 는 파일에 HELIX/SHEET 가 있으면 그 주석을 그대로 쓰고, 없을 때만 이 휴리스틱을 돌린다는 점도 함께 적을 것.
