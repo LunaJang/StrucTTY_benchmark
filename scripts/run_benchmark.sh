@@ -1,11 +1,11 @@
 #!/bin/bash
 set -euo pipefail
 
-BINARY="$HOME/src/StrucTTY/build/StrucTTY"
-BENCH_DIR="$HOME/src/StrucTTY_benchmark/benchmark"
-RUNS=5
-RESULTS_DIR="$HOME/src/StrucTTY_benchmark/benchmark_results"
-CPU_CORE=0
+BINARY="${BINARY:-$HOME/src/StrucTTY/build/StrucTTY}"
+BENCH_DIR="${BENCH_DIR:-$HOME/src/StrucTTY_benchmark/benchmark}"
+RUNS="${RUNS:-5}"
+RESULTS_DIR="${RESULTS_DIR:-$HOME/src/StrucTTY_benchmark/benchmark_results}"
+CPU_CORE="${CPU_CORE:-0}"
 
 mkdir -p "$RESULTS_DIR"
 
