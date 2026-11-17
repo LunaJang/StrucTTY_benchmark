@@ -41,30 +41,47 @@ if [ ! -d "$EXAMPLE_ROOT" ]; then
 fi
 
 CSV="$RESULT_DIR/memory.csv"
-printf 'scenario,detail,n_struct,peak_rss_kb,wall_s\n' > "$CSV"
+printf 'scenario,detail,n_struct,run,peak_rss_kb,wall_s\n' > "$CSV"
+
+RUNS="${RUNS:-5}"
 
 measure() {
     local scenario="$1" detail="$2" nstruct="$3"; shift 3
-    local log="$RESULT_DIR/${scenario}_${detail}.time"
-    printf 'q' | "$TIME_BIN" -v "$BINARY" "$@" > /dev/null 2> "$log" || true
-    local rss wall
-    rss="$(awk -F': ' '/Maximum resident set size/{print $2}' "$log")"
-    wall="$(awk -F': ' '/Elapsed \(wall clock\)/{print $2}' "$log")"
-    if [ -z "$rss" ]; then
-        echo "  SKIP $scenario/$detail (measurement failed - see $log)"
-        return
-    fi
-    local wall_s
-    wall_s="$(python3 -c "
-import sys
-t='''$wall'''.strip()
-p=[float(x) for x in t.split(':')] if t else [0.0]
-s=0.0
-for v in p: s = s*60 + v
-print(f'{s:.2f}')
+    local log rss wall
+    local -a rss_values=()
+
+    for run in $(seq 1 "$RUNS"); do
+        log="$RESULT_DIR/${scenario}_${detail}_run${run}.time"
+        printf 'q' | "$TIME_BIN" -v "$BINARY" "$@" > /dev/null 2> "$log" || true
+        rss="$(awk -F': ' '/Maximum resident set size/{print $2}' "$log")"
+        wall="$(awk -F': ' '/Elapsed \(wall clock\)/{print $2}' "$log")"
+        if [ -z "$rss" ]; then
+            echo "  SKIP $scenario/$detail run $run (measurement failed - see $log)"
+            continue
+        fi
+        wall="$(python3 -c "
+text = '$wall'.strip()
+parts = [float(x) for x in text.split(':')] if text else [0.0]
+seconds = 0.0
+for part in parts:
+    seconds = seconds * 60 + part
+print(f'{seconds:.2f}')
 ")"
-    printf '%s,%s,%s,%s,%s\n' "$scenario" "$detail" "$nstruct" "$rss" "$wall_s" >> "$CSV"
-    printf '  %-12s %-28s n=%-2s  %8s KB  %6ss\n' "$scenario" "$detail" "$nstruct" "$rss" "$wall_s"
+        printf '%s,%s,%s,%s,%s,%s\n' "$scenario" "$detail" "$nstruct" "$run" "$rss" "$wall" >> "$CSV"
+        rss_values+=("$rss")
+    done
+
+    [ ${#rss_values[@]} -gt 0 ] || return 0
+
+    python3 - "$scenario" "$detail" "$nstruct" "${rss_values[@]}" <<'SUMMARY'
+import sys
+scenario, detail, nstruct = sys.argv[1:4]
+values = [int(v) for v in sys.argv[4:]]
+mean = sum(values) / len(values) / 1024
+spread = (max(values) - min(values)) / 1024
+print(f"  {scenario:<10} {detail:<22} n={nstruct:<2} {mean:8.1f} MB"
+      f"   spread {spread:4.1f} MB over {len(values)} runs")
+SUMMARY
 }
 
 echo "--- single structure, by size ---"
@@ -110,16 +127,28 @@ else
 fi
 
 echo ""
-echo "=== summary (peak RSS) ==="
-python3 - "$CSV" <<'EOF'
-import csv, sys
+echo "=== summary (peak RSS, mean of $RUNS runs) ==="
+python3 - "$CSV" <<'SUMMARY'
+import csv
+import sys
+from collections import OrderedDict
+
 rows = list(csv.DictReader(open(sys.argv[1])))
 if not rows:
-    print("  no measurements"); raise SystemExit
-w = max(len(f"{r['scenario']}/{r['detail']}") for r in rows)
-for r in rows:
-    mb = int(r['peak_rss_kb']) / 1024.0
-    print(f"  {r['scenario']+'/'+r['detail']:<{w}}  {mb:8.1f} MB   {r['wall_s']:>6} s")
-EOF
+    print("  no measurements")
+    raise SystemExit
+
+grouped = OrderedDict()
+for row in rows:
+    grouped.setdefault(f"{row['scenario']}/{row['detail']}", []).append(row)
+
+width = max(len(name) for name in grouped)
+print(f"  {'scenario':<{width}}  {'mean':>9}  {'min':>8}  {'max':>8}  {'wall':>7}  runs")
+for name, group in grouped.items():
+    rss = [int(r['peak_rss_kb']) / 1024.0 for r in group]
+    wall = sum(float(r['wall_s']) for r in group) / len(group)
+    print(f"  {name:<{width}}  {sum(rss) / len(rss):6.1f} MB  "
+          f"{min(rss):5.1f} MB  {max(rss):5.1f} MB  {wall:5.2f} s  {len(group):4d}")
+SUMMARY
 echo ""
 echo "csv: $CSV"

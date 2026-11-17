@@ -37,7 +37,7 @@ Numbered in the order they are meant to run.
 |---|---|
 | `01_run_benchmark.sh` | Renders each benchmark structure `RUNS` times on a single pinned core under a 4 GB limit, writing one CSV per run |
 | `02_analyze_benchmark.py` | Turns those CSVs into the benchmark table: load time, time to first frame, per-frame render time and input-to-frame latency |
-| `03_measure_peak_memory.sh` | Peak RSS with `/usr/bin/time -v` for single structures by size, several structures at once, a Foldseek result and an MSA |
+| `03_measure_peak_memory.sh` | Peak RSS with `/usr/bin/time -v`, five runs per scenario, for single structures by size, several structures at once, a Foldseek result and an MSA |
 | `04_check_render_determinism.sh` | Renders the same file five times, plus copies differing only in name, directory and extension, in four color modes, and compares glyph-layer hashes |
 | `05_measure_multi_structure_overlap.sh` | Counts per-structure ink bounding boxes, bounding-box intersections and same-cell collisions for 2 to 9 structures at three terminal sizes |
 | `06_measure_ss_agreement.sh` | Builds `ss_agreement.cpp` against StrucTTY's own `SSPredictor` and compares its P-SEA assignment residue by residue against the HELIX/SHEET records in each file |
