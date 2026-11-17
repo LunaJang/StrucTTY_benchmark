@@ -1,2 +1,0 @@
-skip /home/user1/src/StrucTTY_benchmark/revision_results/r2_7_memory/example/3A0C-assembly1_colabfold.pdb: no HELIX/SHEET annotation
-skip /home/user1/src/StrucTTY_benchmark/revision_results/r2_7_memory/example/L7RCY6.pdb: no HELIX/SHEET annotation

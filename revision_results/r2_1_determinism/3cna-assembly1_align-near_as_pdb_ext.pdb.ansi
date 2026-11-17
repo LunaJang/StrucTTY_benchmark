@@ -1,7 +1,0 @@
-Input parameters >> 
-  in_file: 
-	/home/user1/src/StrucTTY_benchmark/revision_results/r2_1_determinism/work/as_pdb_ext.pdb
-  mode: align-near
-  chainfile: 
-  show_structure: 0
-  benchmark_mode: 0

@@ -1,9 +1,0 @@
-  1 ................................................................cc....
-  2 .............................dd............aaa...........aaccacccccc..
-  3 .................ddddbbdddddddddd.........aaaaaaaaaaaaaaccceeeeeccccc.
-  4 .................ddddddddffffffddd.........aaaaaaaacccccccceeeeacccccc
-  5 .................dddddddddddff..............aaa.aaaaccccccceeeeecccccc
-  6 ..................bddddd..dd......................aaccccccceeeecceec..
-  7 ....................dddd..................................ccaacccceec.
-  8 ..................................................................ccc.
-legend: a=xterm30, b=xterm58, c=xterm80, d=xterm100, e=xterm159, f=xterm184

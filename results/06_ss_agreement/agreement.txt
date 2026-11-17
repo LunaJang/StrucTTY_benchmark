@@ -1,0 +1,14 @@
+structure                      res   agree% H_recall   H_prec S_recall   S_prec C_recall
+1CJK-assembly1.cif             709     78.0     83.7     95.3     57.7     71.9     82.4
+1NPL-assembly1.cif             436     66.1        -        -     28.6     63.2     89.6
+3A0C-assembly1.cif             218     65.1        -        -     35.4     70.8     88.5
+3HGM-assembly1.cif             294     81.3     73.5    100.0     87.5     86.0     91.6
+3OAG-assembly1.cif             333     67.0     36.8    100.0     66.4     82.9     84.9
+8KGM-assembly1.cif            2367     73.7     69.3     99.1     62.7     66.4     84.7
+9FL9-assembly1.cif             872     80.6     81.4     99.4     56.9     67.9     89.0
+9N47-assembly1.cif            1326     79.0     66.6     98.7     70.0     58.3     93.9
+3cna-assembly1.cif             948     70.9        -        -     51.3     81.9     89.3
+2PEL.cif                       928     64.2      0.0        -     47.6     80.4     87.7
+4K1Z.cif                       948     68.2      0.0        -     53.8     88.5     93.3
+                                                                                        
+ALL                           9379     73.1     68.7     98.6     53.6     76.0     88.7

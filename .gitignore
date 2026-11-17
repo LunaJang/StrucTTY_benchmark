@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+results/06_ss_agreement/ss_agreement
+results/build.log
+scripts/ss_dump
