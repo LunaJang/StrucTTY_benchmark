@@ -3,3 +3,5 @@ __pycache__/
 results/06_ss_agreement/ss_agreement
 results/build.log
 scripts/ss_dump
+results/*/work/
+results/03_memory/createdb.log

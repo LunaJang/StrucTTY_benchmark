@@ -1,19 +1,19 @@
 Foldseek input: query=structure directory, target=structure directory, result=14 cols (Foldseek multimer report), mode=align-near
 	Command being timed: "/home/user1/src/StrucTTY/build/StrucTTY /home/user1/src/StrucTTY_benchmark/results/03_memory/example/foldseek_result/DB1/ -fst /home/user1/src/StrucTTY_benchmark/results/03_memory/example/foldseek_result/DB2/ -fsr /home/user1/src/StrucTTY_benchmark/results/03_memory/example/foldseek_result/result_multimer_report -m align-near"
 	User time (seconds): 0.10
-	System time (seconds): 0.01
-	Percent of CPU this job got: 100%
+	System time (seconds): 0.00
+	Percent of CPU this job got: 99%
 	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.11
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 22704
+	Maximum resident set size (kbytes): 22684
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 8359
+	Minor (reclaiming a frame) page faults: 8360
 	Voluntary context switches: 1
-	Involuntary context switches: 2
+	Involuntary context switches: 50
 	Swaps: 0
 	File system inputs: 0
 	File system outputs: 8

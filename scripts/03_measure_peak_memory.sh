@@ -104,8 +104,9 @@ fi
 
 echo "--- loading a Foldseek result ---"
 FS_DIR="$EXAMPLE_ROOT/foldseek_result"
+FOLDSEEK="${FOLDSEEK:-$(command -v foldseek || true)}"
 if [ -d "$FS_DIR/DB1" ] && [ -f "$FS_DIR/result" ]; then
-    measure foldseek "dir_target_m8" 2 \
+    measure foldseek "dir_target" 2 \
         "$FS_DIR/DB1/3cna-assembly1.cif" -fst "$FS_DIR/DB2/" -fsr "$FS_DIR/result" -m align
     measure foldseek "dir_query_multi" 2 \
         "$FS_DIR/DB1/" -fst "$FS_DIR/DB2/" -fsr "$FS_DIR/result" -m align
@@ -113,7 +114,21 @@ if [ -d "$FS_DIR/DB1" ] && [ -f "$FS_DIR/result" ]; then
         measure foldseek "multimer_report" 2 \
             "$FS_DIR/DB1/" -fst "$FS_DIR/DB2/" -fsr "$FS_DIR/result_multimer_report" -m align-near
     fi
+
+    TARGET_DB="$RESULT_DIR/work/targetDB"
+    if [ ! -f "$TARGET_DB" ] && [ -x "$FOLDSEEK" ]; then
+        mkdir -p "$RESULT_DIR/work"
+        "$FOLDSEEK" createdb "$FS_DIR/DB2/" "$TARGET_DB" > "$RESULT_DIR/createdb.log" 2>&1 \
+            || echo "  WARN: foldseek createdb failed - see $RESULT_DIR/createdb.log"
+    fi
+    if [ -f "$TARGET_DB" ]; then
+        measure foldseek "db_target" 2 \
+            "$FS_DIR/DB1/3cna-assembly1.cif" -fst "$TARGET_DB" -fsr "$FS_DIR/result" -m align
+    else
+        echo "  SKIP db_target (set FOLDSEEK to a foldseek binary to build the target DB)"
+    fi
 else
+
     echo "  SKIP (no example/foldseek_result)"
 fi
 

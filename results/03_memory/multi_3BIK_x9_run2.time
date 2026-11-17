@@ -1,18 +1,18 @@
 	Command being timed: "/home/user1/src/StrucTTY/build/StrucTTY /home/user1/src/StrucTTY_benchmark/results/03_memory/work/copy1.cif /home/user1/src/StrucTTY_benchmark/results/03_memory/work/copy2.cif /home/user1/src/StrucTTY_benchmark/results/03_memory/work/copy3.cif /home/user1/src/StrucTTY_benchmark/results/03_memory/work/copy4.cif /home/user1/src/StrucTTY_benchmark/results/03_memory/work/copy5.cif /home/user1/src/StrucTTY_benchmark/results/03_memory/work/copy6.cif /home/user1/src/StrucTTY_benchmark/results/03_memory/work/copy7.cif /home/user1/src/StrucTTY_benchmark/results/03_memory/work/copy8.cif /home/user1/src/StrucTTY_benchmark/results/03_memory/work/copy9.cif -m protein"
-	User time (seconds): 0.08
-	System time (seconds): 0.01
+	User time (seconds): 0.09
+	System time (seconds): 0.00
 	Percent of CPU this job got: 98%
 	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.10
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 14700
+	Maximum resident set size (kbytes): 14804
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 10737
+	Minor (reclaiming a frame) page faults: 10721
 	Voluntary context switches: 1
-	Involuntary context switches: 75
+	Involuntary context switches: 5
 	Swaps: 0
 	File system inputs: 0
 	File system outputs: 0
