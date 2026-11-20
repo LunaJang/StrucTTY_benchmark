@@ -1,2 +1,2 @@
-terminate called after throwing an instance of 'std::runtime_error'
-  what():  Incorrect file format (perhaps it is cif not pdb?): /home/user1/src/StrucTTY_benchmark/revision_results_fixed/r2_1_determinism/work/as_pdb_ext.pdb
+Error: failed to parse /home/user1/src/StrucTTY_benchmark/results/04_determinism/work/as_pdb_ext.pdb: Incorrect file format (perhaps it is cif not pdb?): /home/user1/src/StrucTTY_benchmark/results/04_determinism/work/as_pdb_ext.pdb
+       The file extension may not match its content.

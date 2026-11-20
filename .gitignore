@@ -1,7 +1,10 @@
 __pycache__/
 *.pyc
-results/06_ss_agreement/ss_agreement
-results/build.log
 scripts/ss_dump
 results/*/work/
+results/03_memory/example/
+results/03_memory/example.zip
 results/03_memory/createdb.log
+results/06_ss_agreement/ss_agreement
+results/06_ss_agreement/compile.log
+results/build.log

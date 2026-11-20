@@ -1,1 +1,2 @@
-Error: input file format is not supported.
+Error: failed to parse /home/user1/src/StrucTTY_benchmark/results/04_determinism/work/as_ent_ext.ent: Incorrect file format (perhaps it is cif not pdb?): /home/user1/src/StrucTTY_benchmark/results/04_determinism/work/as_ent_ext.ent
+       The file extension may not match its content.
